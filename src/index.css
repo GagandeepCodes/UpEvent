@@ -29,7 +29,8 @@ h6 {
   color: #333333;
 }
 
-/* NAVBAR CSS STYLING */
+/******************** NAVBAR CSS STYLING
+********************************************** */
 .container{
   padding: 0.5rem 6rem;
 }
@@ -71,15 +72,37 @@ h6 {
 .btn-style:hover{
   background-color: var(--primary-color);
   color:#fff;
+  cursor: pointer;
 }
 
 .btn-style:first-child{
   margin-right: 2rem;
 }
+.btn-style-home{
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  border: 0.1rem solid var(--primary-color);
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  color:#fff;
+}
+.btn-style-home:hover{
+  background-color: transparent;
+  color: #000;
+  border: 0.1rem solid var(--primary-color);
+  cursor: pointer;
+}
 
-
-
-
+.main-hero-para{
+  font-weight: lighter;
+  font-size: 1.4rem;
+}
+.btn-home-para{
+  margin-top: 1rem;
+  margin-left: 11rem;
+}
 
 
 
