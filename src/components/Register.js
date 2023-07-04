@@ -73,21 +73,21 @@ export default function Register() {
         setSuccess(true);
     }
     return (
-        <>
+        <div className='register'>
         { success ? (
-            <section>
+            <section className='register-section'>
                 <h1>Account created!</h1>
                 <p>
                     <a href="#">Sign In</a>
                 </p>
             </section>
         ):(
-        <section>
+        <section className='register-section'>
+            <h1 style={{textAlign:'center'}}>Register</h1>
             <p ref = {errRef} className= {errMsg ? "errmsg" : "offscreen"} aria-live='assertive'>
                 {errMsg}
             </p>
-            <h1>Register</h1>
-            <form onSubmit={handleSubmit}>
+            <form className='register-form' onSubmit={handleSubmit}>
                 <label htmlFor="username" className="usertext">
                     Username:
                     <span className={validName ? "valid" : "hide"}>
@@ -183,6 +183,6 @@ export default function Register() {
             </form>
         </section>
         )}
-        </>
+        </div>
     )
   }
