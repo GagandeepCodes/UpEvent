@@ -1,13 +1,107 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+/* custom colors  */
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --bgcolor: #f1f5fd;
+  --primary-color: #30325E;
+  --text-color: #828286;
+  --main-text-color: #333333;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+
+/* NAVBAR CSS STYLING */
+.container{
+  padding: 0.5rem 6rem;
+}
+.navbar-bg{
+  background-color: var(--bgcolor);
+  z-index: 99;
+  position: relative;
+}
+
+.navbar-brand{
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.navbar li{
+  padding: 0 2rem;
+  margin : 1rem 0rem;
+}
+.navbar li a{
+  font-size: 1.7rem;
+  font-weight: lighter;
+  color : var(--primary-color);
+  text-decoration: none;
+}
+.navbar li a:hover{
+  color: #30325E !important;
+  border-bottom: 3px solid #30325E;
+  transition: 100ms;
+}
+.btn-style{
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+.btn-style:hover{
+  background-color: var(--primary-color);
+  color:#fff;
+}
+
+.btn-style:first-child{
+  margin-right: 2rem;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px;
+  }
 }
